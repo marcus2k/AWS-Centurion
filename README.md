@@ -1,16 +1,20 @@
-# first_app
+# Centurion
 
-A new Flutter project.
+We help visually-impaired people to navigate MRT stations!
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Make sure the visually-impaired user's in-built screen reader is activated.
+2. Install this project's APK in his device!
+3. (S)He is good to go! 
 
-A few resources to get you started if this is your first Flutter project:
+(Visually-impared friendly instructions on gettings started is on the way)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+The app helps visually-impaired people to follow the right tactile pavings depending on his starting location and his destination. Location information is collected from the phone's GPS system. Location information is stored in DynamoDB, to decide the MRT station entrance nearest to the visually-impared user.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Background Information
+
+This project was submitted as part of Build On Singapore 2020 Finalist round, under problem statement 14: Inclusivity in Urban Planning. For more information, you may visit our video submission: <link not yet updated>
+
+This project uses Flutter as its front-end and AWS Lambda as a serverless backend. It communicates by sending RESTful API calls to the lambda handler, with the API powered by Amazon API Gateway. Tactile pavings data are stored in Amazon DynamoDB in the form of undirected weighted graphs, and paths are calculated using Uniform Cost Search algorithm. The path is then converted to basic strings of instructions (e.g. "Left", "Right", "Down B2"), to be further processed and clarified by the front end.
