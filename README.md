@@ -25,4 +25,4 @@ This project uses Flutter as its front-end and AWS Lambda as a serverless backen
 
 To listen to guiding sound, you may visit our youtube submission which includes screen-reader demo.
 
-![alt text](https://github.com/marcus2k/AWS-Centurion/tree/master/others/app_demo.gif "Centurion App Demo")
+![alt text](https://github.com/marcus2k/AWS-Centurion/tree/master/others/app-demo.gif "Centurion App Demo")
