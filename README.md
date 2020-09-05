@@ -15,6 +15,8 @@ The app helps visually-impaired people to follow the right tactile pavings depen
 
 ## Background Information
 
-This project was submitted as part of Build On Singapore 2020 Finalist round, under problem statement 14: Inclusivity in Urban Planning. For more information, you may visit our video submission: <link not yet updated>
+This project was submitted as part of Build On Singapore 2020 Finalist round, under problem statement 14: Inclusivity in Urban Planning. For more information, you may visit our video submission:
+
+https://www.youtube.com/watch?v=aJoJPrtM8c4
 
 This project uses Flutter as its front-end and AWS Lambda as a serverless backend. It communicates by sending RESTful API calls to the lambda handler, with the API powered by Amazon API Gateway. Tactile pavings data are stored in Amazon DynamoDB in the form of undirected weighted graphs, and paths are calculated using Uniform Cost Search algorithm. The path is then converted to basic strings of instructions (e.g. "Left", "Right", "Down B2"), to be further processed and clarified by the front end.
